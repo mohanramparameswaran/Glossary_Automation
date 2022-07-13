@@ -2,8 +2,8 @@
 
 import pandas as pd
 
-df1=pd.read_excel("D:\Python_auto\old_glos.xlsx",skiprows=1)
-df2=pd.read_excel("D:\Python_auto\Latest.xlsx",skiprows=1)
+df1=pd.read_excel("old_glos.xlsx",skiprows=1)
+df2=pd.read_excel("Latest.xlsx",skiprows=1)
 df3=pd.DataFrame()
 
 
@@ -35,7 +35,7 @@ for i in range(0,new_glossary_row_count):
         
         
 print(df3)
-df3.to_excel("D:\Python_auto\output.xlsx",sheet_name='New_DFs')
+df3.to_excel("output.xlsx",sheet_name='New_DFs')
             
             
             
